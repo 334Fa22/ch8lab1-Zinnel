@@ -129,7 +129,7 @@ figcaption {
     font-weight: bold;
 }
 
-#contact, #rental h2 {
+#contact, #rental, h2 {
     text-align: center;
 }
 
@@ -185,7 +185,32 @@ th {
   color: #fff;
   font-size: 1.15em;
 }
-/* resume start here, start of page 455*/
+
+tr:nth-child(odd) {
+  background-color: #b7b7e1;
+}
+/* Style rules for form elements */
+fieldset, input {
+  margin-bottom: 2%;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label {
+  display: block;
+  padding-top: 3%;
+}
+
+form #submit {
+  margin: 0 auto;
+  display: block;
+  padding: 3%;
+  background-color: #b7b7e1;
+  font-size: 1em;
+}
 
 /* Style rules for footer content */
 footer {
@@ -242,13 +267,20 @@ footer a {
         grid-column: 1 / span 2;
     }
 
+  }
+
     /* Tablet Viewport: Style rule for map */
    .map {
         width: 500px;
         height: 450px;
     }
 
+/*Tablet Viewport: Style rule for form element */
+form {
+  width: 70%;
+  margin: 0 auto;
 }
+
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 769px), print {
@@ -294,6 +326,22 @@ footer a {
     aside {
         grid-column: 1 / span 4;
     }
+
+/*Desktop Viewport: Style rules for table*/
+  table {
+    width: 70%;
+  }
+
+/* Desktop Viewport: Style rules for form elements */
+.form-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+
+.btn {
+  grid-column: 1 / span 2;
+}
 
 }
 
